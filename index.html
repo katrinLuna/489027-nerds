@@ -26,7 +26,7 @@
 
       <h1 class="visually-hidden">Студия дизайна Нёрдс</h1>
 
-      <section class="main-slider">
+      <section class="slider">
         <h2 class="visually-hidden">Основные преимущества студии дизайна Нёрдс</h2>
 
         <div class="slider-inner">
@@ -36,37 +36,39 @@
         </div>
       </section>
 
-      <section class="catalog-all">
+      <section class="services">
         <h2 class="visually-hidden">Услуги Студии дизайна Нёрдс</h2>
 
-        <div class="catalog-item">
-          <h3>веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-          <a href="#">Заказать</a>
-        </div>
-        <div class="catalog-item">
-          <h3>приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#">Заказать</a>
-        </div>
-        <div class="catalog-item">
-          <h3>презентации</h3>
-          <p>Вы даже не подозреваете насколько вы изумительны!</p>
-          <a href="#">Заказать</a>
-        </div>
+        <ul class="services-list">
+          <li class="services-item">
+            <h3>веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+            <a href="#" class="services-btn">Заказать</a>
+          </li>
+          <li class="services-item">
+            <h3>приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#" class="services-btn">Заказать</a>
+          </li>
+          <li class="services-item">
+            <h3>презентации</h3>
+            <p>Вы даже не подозреваете насколько вы изумительны!</p>
+            <a href="#" class="services-btn">Заказать</a>
+          </li>
+        </ul>
       </section>
 
-      <section class="about-studio">
+      <section class="about">
         <h2 class="visually-hidden">Описание Студии дизайна Нёрдс</h2>
 
-        <div class="about_description">
+        <div class="about-description">
           <p><b>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара</b></p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математические расчёты превыше креатива. Работаем не покладая рук, как роботы</p>
-          <p class="about_list-desc">выполняем заказы на разработку:</p>
-          <ul class="about_list">
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для и </li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          <p class="about-list-desc">выполняем заказы на разработку:</p>
+          <ul class="about-list">
+            <li  class="about-item">Веб-сайтов любой сложности</li>
+            <li  class="about-item">Мобильных приложений для и </li>
+            <li  class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
         <div class="about-stat">
@@ -88,11 +90,12 @@
 
       <section class="customers">
         <h2 class="visually-hidden">Клиенты Студии дизайна Нёрдс</h2>
+
         <ul class="customers-list">
-          <li><a href=""><img src="html_acad_logo.jpg" width="" height="" alt="" title=""></a></li>
-          <li><a href=""><img src="borodinski_logo.jpg" width="" height="" alt="" title=""></a></li>
-          <li><a href=""><img src="pink_logo.jpg" width="" height="" alt="" title=""></a></li>
-          <li><a href=""><img src="mishka_logo.jpg" width="" height="" alt="" title=""></a></li>
+          <li  class="customers-item"><a href=""><img src="html_acad_logo.jpg" width="" height="" alt="" title=""></a></li>
+          <li  class="customers-item"><a href=""><img src="borodinski_logo.jpg" width="" height="" alt="" title=""></a></li>
+          <li  class="customers-item"><a href=""><img src="pink_logo.jpg" width="" height="" alt="" title=""></a></li>
+          <li  class="customers-item"><a href=""><img src="mishka_logo.jpg" width="" height="" alt="" title=""></a></li>
         </ul>
       </section>
 
@@ -103,25 +106,40 @@
           <p>NЁRDS DESIGN STUDIO</p>
           <p>191186, Санкт-петербург, Ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7(812) 275-75-75</p>
-          <a href="#modal">Напишите нас</a>
+          <a href="#modal" class="contacts-btn">Напишите нас</a>
         </div>
       </section>
 
     </main>
 
     <footer class="main-footer">
-      <div class="footer-leftside">
-        <ul class="social-btn">
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+      <div class="footer-social">
+        <ul>
+          <li class="social-btn"><a href=""></a></li>
+          <li class="social-btn"><a href=""></a></li>
+          <li class="social-btn"><a href=""></a></li>
         </ul>
       </div>
-      <div class="footer-rightside">
+      <div class="footer-offer">
         <p>Давайте дружить, это выгодно!</p>
         <p> Скидка 10% для друзей и социальных сетей.</p>
       </div>
     </footer>
+
+    <section class="modal-form">
+      <h2>Напишите нам</h2>
+
+      <label for="name">Ваше имя</label>
+      <input type="" name="" id="name">
+      <label for="email">Ваш-email</label>
+      <input type="" name="" id="email">
+      <label>Текст письма</label>
+      <textarea></textarea>
+      <input type="submit" name="" value="Отправить">
+
+      <span class="modal-close">закрыть окно</span>
+
+    </section>
 
   </body>
 </html>
